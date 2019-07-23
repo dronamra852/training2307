@@ -5,8 +5,8 @@ ARG license_key="1234-789"
 ENV ORA_PORT=1521
 label maintainer rajesh.dronamraju@gmail.com
 RUN mkdir /code
-copy Sample.sh /code/Sample.sh
-run chmod +x /code/Sample.sh
+copy sample.sh /code/sample.sh
+run chmod +x /code/sample.sh
 run echo $license_key
 workdir /code
-cmd sh /code/Sample.sh
+cmd sh /code/sample.sh
